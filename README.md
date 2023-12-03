@@ -69,6 +69,14 @@ make
 
 Esto generará ejecutables en el directorio `bin/`.
 
+### Limpieza
+
+Para eliminar los archivos binarios compilados, ejecuta:
+
+```bash
+make clean
+```
+
 ## Uso
 
 Para ejecutar las diferentes versiones del programa, utiliza los siguientes comandos:
