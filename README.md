@@ -17,7 +17,6 @@ proyecto-imagenes/
 │   └── paralelo_openmp/
 │       └── lumus_parallel_openmp.cpp
 │
-├── include/  [Cabeceras si son necesarias]
 ├── bin/      [Archivos binarios compilados]
 ├── img/      [Imágenes de prueba]
 ├── Makefile
