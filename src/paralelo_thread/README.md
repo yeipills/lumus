@@ -27,5 +27,5 @@ Reemplaza `<ImagenEntrada>` con el nombre del archivo de imagen a color, `<Image
 Desde el directorio raíz del proyecto:
 
 ```bash
-../../bin/lumus_parallel_thread ../../img/1.jpg ../../img/imagen_gris2.jpg 4
+../../bin/lumus_parallel_thread ../../img/1.jpg ../../img/salida_parallel_1.jpg 4
 ```
