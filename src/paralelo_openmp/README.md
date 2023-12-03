@@ -27,5 +27,5 @@ Reemplaza `<ImagenEntrada>` con el nombre del archivo de imagen a color y `<Imag
 Desde el directorio raíz del proyecto:
 
 ```bash
-../../bin/lumus_parallel_openmp ../../img/1.jpg ../../img/imagen_gris3.jpg
+../../bin/lumus_parallel_openmp ../../img/1.jpg ../../img/salida_openmp_1.jpg
 ```
