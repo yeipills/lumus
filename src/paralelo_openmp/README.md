@@ -17,7 +17,7 @@ Esto generará un ejecutable llamado `lumus_parallel_openmp` en el directorio `b
 Para ejecutar el programa, utiliza el siguiente comando desde el directorio raíz del proyecto:
 
 ```bash
-./bin/lumus_parallel_openmp img/<ImagenEntrada> img/<ImagenSalida>
+../../bin/lumus_parallel_openmp ../../img/<ImagenEntrada> ../../img/<ImagenSalida>
 ```
 
 Reemplaza `<ImagenEntrada>` con el nombre del archivo de imagen a color y `<ImagenSalida>` con el nombre del archivo donde se guardará la imagen en escala de grises.
@@ -27,5 +27,5 @@ Reemplaza `<ImagenEntrada>` con el nombre del archivo de imagen a color y `<Imag
 Desde el directorio raíz del proyecto:
 
 ```bash
-./bin/lumus_parallel_openmp img/1.jpg img/imagen_gris.jpg
+../../bin/lumus_parallel_openmp ../../img/1.jpg ../../img/imagen_gris.jpg
 ```
