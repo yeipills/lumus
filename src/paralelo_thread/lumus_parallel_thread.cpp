@@ -2,6 +2,11 @@
 #include <iostream>
 #include <thread>
 #include <vector>
+#include <chrono>
+
+using namespace cv;
+using namespace std;
+using namespace std::chrono;
 
 using namespace cv;
 using namespace std;
