@@ -17,7 +17,7 @@ Esto generará un ejecutable llamado `lumus` en el directorio `bin/` del proyect
 Para ejecutar el programa, utiliza el siguiente comando desde el directorio raíz del proyecto:
 
 ```bash
-./bin/lumus img/<ImagenEntrada> img/<ImagenSalida>
+../../bin/lumus ../../img/<ImagenEntrada> ../../img/<ImagenSalida>
 ```
 
 Reemplaza `<ImagenEntrada>` con el nombre del archivo de imagen a color y `<ImagenSalida>` con el nombre del archivo donde se guardará la imagen en escala de grises.
@@ -27,5 +27,5 @@ Reemplaza `<ImagenEntrada>` con el nombre del archivo de imagen a color y `<Imag
 Desde el directorio raíz del proyecto:
 
 ```bash
-./bin/lumus img/1.jpg img/imagen_gris.jpg
+../../bin/lumus ../../img/1.jpg ../../img/imagen_gris.jpg
 ```
