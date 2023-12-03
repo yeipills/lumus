@@ -92,7 +92,7 @@ Para obtener más información, consulta el [README.md](src/secuencial/README.md
 EJ:
 
 ```
-./bin/lumus img/1.jpg salida_1.jpg
+./bin/lumus img/1.jpg img/salida_1.jpg
 ```
 
 ### Versión Paralela con `std::thread`
@@ -106,7 +106,7 @@ Para obtener más información, consulta el [README.md](src/paralelo_thread/READ
 EJ:
 
 ```
-./bin/lumus_parallel_thread img/1.jpg salida_parallel_1.jpg 4
+./bin/lumus_parallel_thread img/1.jpg img/salida_parallel_1.jpg 4
 ```
 
 ### Versión Paralela con OpenMP
@@ -120,7 +120,7 @@ Para obtener más información, consulta el [README.md](src/paralelo_openmp/READ
 EJ:
 
 ```
-./bin/lumus_parallel_openmp img/1.jpg salida_openmp_1.jpg
+./bin/lumus_parallel_openmp img/1.jpg img/salida_openmp_1.jpg
 ```
 
 ## Licencia
