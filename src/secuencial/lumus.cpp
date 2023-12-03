@@ -1,13 +1,13 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
+#include <chrono>
 
-// Espacios de nombres para facilitar la escritura del código
 using namespace cv;
 using namespace std;
+using namespace std::chrono;
 
 // Función para convertir una imagen a color a escala de grises
 void convertirAGris(const Mat& imagenColor, Mat& imagenGris) {
-    // Recorre cada píxel de la imagen
     for (int y = 0; y < imagenColor.rows; y++) {
         for (int x = 0; x < imagenColor.cols; x++) {
             Vec3b pixel = imagenColor.at<Vec3b>(y, x); // Obtiene el píxel (BGR)
@@ -35,8 +35,18 @@ int main(int argc, char** argv) {
     // Crea una imagen en blanco del mismo tamaño para la salida en escala de grises
     Mat imagenGris(imagen.rows, imagen.cols, CV_8UC1);
 
+    // Inicia el temporizador para medir el tiempo de ejecución
+    auto start = high_resolution_clock::now();
+
     // Convierte la imagen a escala de grises
     convertirAGris(imagen, imagenGris);
+
+    // Detiene el temporizador y calcula la duración
+    auto stop = high_resolution_clock::now();
+    auto duration = duration_cast<milliseconds>(stop - start);
+
+    // Muestra el tiempo de ejecución en milisegundos
+    cout << "Tiempo de ejecución: " << duration.count() << " ms" << endl;
 
     // Guarda la imagen resultante
     if (!imwrite(argv[2], imagenGris)) {
@@ -46,4 +56,3 @@ int main(int argc, char** argv) {
 
     return 0;
 }
-
