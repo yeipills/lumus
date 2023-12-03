@@ -1,8 +1,11 @@
 # Definir el compilador
 CC=g++
 
-# Opciones de compilación, incluyendo banderas para OpenCV
-CFLAGS=-std=c++11 `pkg-config --cflags --libs opencv4`
+# Opciones de compilación
+CFLAGS=-std=c++11
+
+# Opciones de vinculación para OpenCV
+OPENCV_LIBS=$(shell pkg-config --cflags --libs opencv4)
 
 # Ruta al directorio de binarios
 BINDIR=../../bin
@@ -15,7 +18,7 @@ all: $(EXECUTABLE)
 
 # Regla para compilar el ejecutable
 $(EXECUTABLE): lumus.cpp
-	$(CC) $(CFLAGS) lumus.cpp -o $(EXECUTABLE)
+	$(CC) $(CFLAGS) lumus.cpp -o $(EXECUTABLE) $(OPENCV_LIBS)
 
 # Regla para limpiar los archivos compilados
 clean:
