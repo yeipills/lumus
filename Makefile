@@ -40,4 +40,5 @@ $(EXE_OPENMP): $(SRC_OPENMP)
 	$(CC) $(CFLAGS) $^ -fopenmp -o $@ $(OPENCV_LIBS)
 
 clean:
-	rm -f $(BINDIR)/*
+	find $(BINDIR) -type f ! -name '.gitkeep' -delete
+

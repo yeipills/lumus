@@ -1,6 +1,5 @@
 # Archivos binarios y ejecutables
 !bin/.gitkeep
-bin/*
 *.exe
 *.out
 *.o
