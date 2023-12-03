@@ -8,9 +8,6 @@ using namespace cv;
 using namespace std;
 using namespace std::chrono;
 
-using namespace cv;
-using namespace std;
-
 // Función para convertir a escala de grises una sección de la imagen de manera paralela
 void convertirAGrisParalelo(const Mat& imagenColor, Mat& imagenGris, int inicioY, int finY) {
     for (int y = inicioY; y < finY; y++) {
@@ -38,6 +35,9 @@ int main(int argc, char** argv) {
     vector<thread> hilos;
     Mat imagenGris(imagen.rows, imagen.cols, CV_8UC1);
 
+    // Iniciar el temporizador
+    auto start = high_resolution_clock::now();
+
     int paso = imagen.rows / numHilos;
     // Crea un hilo por cada sección de la imagen
     for (int i = 0; i < numHilos; ++i) {
@@ -49,10 +49,20 @@ int main(int argc, char** argv) {
         hilo.join();
     }
 
+    // Detener el temporizador
+    auto stop = high_resolution_clock::now();
+
+    // Calcular la duración
+    auto duration = duration_cast<microseconds>(stop - start);
+
+    // Guarda la imagen resultante
+    if (!imwrite(argv[2], imagenGris)) {
+        cout << "Error al guardar la imagen" << endl;
+        return -1;
+    }
+
     // Mostrar el tiempo de ejecución
     cout << "Tiempo de ejecución: " << duration.count() / 1000.0 << " milisegundos" << endl;
-
-    return 0;
 
     return 0;
 }
