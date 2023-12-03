@@ -69,6 +69,19 @@ make
 
 Esto generará ejecutables en el directorio `bin/`.
 
+---
+
+### Disclaimer sobre el Mensaje de Makefile
+
+Cuando ejecutas el comando `make` y ves el mensaje:
+
+```bash
+make: Nothing to be done for 'all'.
+```
+Esto significa que todos los objetivos especificados en el `Makefile` ya están actualizados, y `make` determina que no hay nada más que compilar, para poder recrear el comando usa `make clean` esta un poco mas abajo.
+
+---
+
 ### Limpieza
 
 Para eliminar los archivos binarios compilados, ejecuta:
