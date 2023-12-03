@@ -1,4 +1,5 @@
 # Archivos binarios y ejecutables
+!bin/.gitkeep
 bin/*
 *.exe
 *.out
@@ -34,7 +35,6 @@ Desktop.ini
 CMakeFiles
 CMakeCache.txt
 cmake_install.cmake
-Makefile
 
 # Archivos de configuración de OpenCV
 *.xml
