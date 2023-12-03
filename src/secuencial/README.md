@@ -27,5 +27,5 @@ Reemplaza `<ImagenEntrada>` con el nombre del archivo de imagen a color y `<Imag
 Desde el directorio raíz del proyecto:
 
 ```bash
-../../bin/lumus ../../img/1.jpg ../../img/imagen_gris1.jpg
+../../bin/lumus ../../img/1.jpg ../../img/salida_lumus_1.jpg
 ```
