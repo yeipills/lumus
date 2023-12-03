@@ -17,7 +17,7 @@ Esto generará un ejecutable llamado `lumus_parallel_thread` en el directorio `b
 Para ejecutar el programa, utiliza el siguiente comando desde el directorio raíz del proyecto:
 
 ```bash
-./bin/lumus_parallel_thread img/<ImagenEntrada> img/<ImagenSalida> <NumHilos>
+../../bin/lumus_parallel_thread ../../img/<ImagenEntrada> ../../img/<ImagenSalida> <NumHilos>
 ```
 
 Reemplaza `<ImagenEntrada>` con el nombre del archivo de imagen a color, `<ImagenSalida>` con el nombre del archivo donde se guardará la imagen en escala de grises, y `<NumHilos>` con el número de hilos que deseas utilizar.
@@ -27,5 +27,5 @@ Reemplaza `<ImagenEntrada>` con el nombre del archivo de imagen a color, `<Image
 Desde el directorio raíz del proyecto:
 
 ```bash
-./bin/lumus_parallel_thread img/1.jpg img/imagen_gris.jpg 4
+../../bin/lumus_parallel_thread ../../img/1.jpg ../../img/imagen_gris.jpg 4
 ```
