@@ -1,0 +1,42 @@
+# Archivos binarios y ejecutables
+bin/*
+*.exe
+*.out
+*.o
+
+# Directorios de salida de imagen
+img/salida_*.jpg
+
+# Archivos objeto, precompilados y temporales
+*.o
+*.obj
+*.so
+*.a
+*.gch
+*.pch
+*.d
+*.log
+*.tmp
+
+# Archivos y carpetas de editor/IDE
+.vscode/
+.sublime/
+.idea/
+
+# Archivos de sistema específicos de macOS
+.DS_Store
+
+# Archivos de sistema específicos de Windows
+Thumbs.db
+Desktop.ini
+
+# Archivos de configuración de CMake
+CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Archivos de configuración de OpenCV
+*.xml
+*.yml
+*.yaml
